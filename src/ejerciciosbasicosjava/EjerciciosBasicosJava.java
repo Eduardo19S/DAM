@@ -28,6 +28,8 @@ public class EjerciciosBasicosJava {
         }
         return 2;//El resto de casos , que son en los que voy a más de 80
     }
+    
+  
 
     /**
      * @param args the command line arguments
@@ -41,7 +43,7 @@ public class EjerciciosBasicosJava {
         //Testeo el segundo ejercicio
         System.out.println(ejercicios.multa(60, false));
         System.out.println(ejercicios.multa(65, false));
-        System.out.println(ejercicios.multa(65, false));
+        System.out.println(ejercicios.multa(65, true));
     }
     
 }
