@@ -82,6 +82,18 @@ public class EjerciciosBasicosJava {
         return false;
     }
     
+    //Ejercicio 7
+    
+    public boolean multiploMultiple (int numero){
+        if (numero % 3 == 0 && numero % 5 == 0){
+            return false;
+        }
+        if (numero % 3 == 0 || numero % 5 == 0){
+             return true;
+        }
+        return false;
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -97,14 +109,14 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicios.multa(65, true));
         
         // Testeo tercer ejercicio
-        System.out.println("muyVanidoso(22) " + ejercicios .muyVanidoso(22));
-        System.out.println("muyVanidoso(23) " + ejercicios .muyVanidoso(23));
-        System.out.println("muyVanidoso(24) " + ejercicios .muyVanidoso(24));
+        System.out.println("muyVanidoso(22) " + ejercicios.muyVanidoso(22));
+        System.out.println("muyVanidoso(23) " + ejercicios.muyVanidoso(23));
+        System.out.println("muyVanidoso(24) " + ejercicios.muyVanidoso(24));
         
         //Testeo cuarto ejercicio
-         System.out.println("contesta (false , false , false) " + ejercicios .contesta (false , false , false));
-         System.out.println("contesta (false , true , false) " + ejercicios .contesta (false , false , true));
-         System.out.println("contesta (true , false , false) " + ejercicios .contesta (false , false , false));
+         System.out.println("contesta (false , false , false) "+ ejercicios.contesta (false , false , false));
+         System.out.println("contesta (false , true , false) " + ejercicios.contesta (false , false , true));
+         System.out.println("contesta (true , false , false) " + ejercicios.contesta (false , false , false));
          
          //Testeo quinto ejercicio
          System.out.println("menorPor10 (1 , 7 , 11) " + ejercicios.menorPor10 (1 , 7 , 11));
@@ -112,9 +124,14 @@ public class EjerciciosBasicosJava {
          System.out.println("menorPor10 (11 ,1  ,7 ) " + ejercicios.menorPor10 (11 , 1 , 7));
          
          //Testeo el sexto ejercicio
-         System.out.println("digitoIgual (12 , 23 ) " + ejercicios.digitoIgual (12 , 23));
-         System.out.println("digitoIgual (12 , 43 ) " + ejercicios.digitoIgual (12 , 43));
+         System.out.println("digitoIgual(12 , 23 )" + ejercicios.digitoIgual (12 , 23));
+         System.out.println("digitoIgual(12 , 43 )" + ejercicios.digitoIgual (12 , 43));
          System.out.println("menorPor10 (12 , 44) " + ejercicios.digitoIgual (12 , 44));
+         
+         //Testeo el séptimo ejercicio
+         System.out.println("multiploMultiple(3)" + ejercicios.multiploMultiple (3));
+         System.out.println("multiploMultiple(15)" + ejercicios.multiploMultiple (10));
+         System.out.println("multiploMultiple(10)" + ejercicios.multiploMultiple (15));
     }
     
 }
