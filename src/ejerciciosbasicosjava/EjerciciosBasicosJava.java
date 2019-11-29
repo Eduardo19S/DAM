@@ -40,14 +40,21 @@ public class EjerciciosBasicosJava {
     }
     
     public boolean contesta( boolean matinal , boolean madre , boolean dormido){
-        if (madre){
-            return true;
-        }
-        if (matinal){
+        if (matinal && madre){
             return true;
         }
         if (dormido){
             return false;
+        }
+        if (matinal){
+            return false;
+        }
+        return true;
+    }
+    
+    public boolean menorPor10 ( int a , int b , int c){
+        if (Math.abs(a - b) >= 10 || Math.abs(a - c) >= 10 || Math.abs(b - c) >= 10){
+            return true;
         }
         return false;
     }
@@ -72,9 +79,15 @@ public class EjerciciosBasicosJava {
         System.out.println("muyVanidoso(24) " + ejercicios .muyVanidoso(24));
         
         //Testeo cuarto ejercicio
-         System.out.println(ejercicios.contesta(false , false , false));
-         System.out.println(ejercicios.contesta(false , false , true));
-         System.out.println(ejercicios.contesta(true , false , false));
+         System.out.println("contesta (false , false , false) " + ejercicios .contesta (false , false , false));
+         System.out.println("contesta (false , true , false) " + ejercicios .contesta (false , false , true));
+         System.out.println("contesta (true , false , false) " + ejercicios .contesta (false , false , false));
+         
+         //Testeo quinto ejercicio
+         System.out.println("menorPor10 (1 , 7 , 11) " + ejercicios .menorPor10 (1 , 7 , 11));
+         System.out.println("menorPor10 (10 , 7 , 10) " + ejercicios .menorPor10 (1 , 7 , 10));
+         System.out.println("menorPor10 (11 ,1  ,7 ) " + ejercicios .menorPor10 (11 , 1 , 7));
+         
     }
     
 }
